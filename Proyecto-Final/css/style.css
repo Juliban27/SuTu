@@ -1,0 +1,647 @@
+/*!-----------------------------RESET----------------------------------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:ital,wght@0,500;0,600;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Rowdies:wght@300&display=swap');
+
+body{
+    background-image: url(../img/background2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+/* paleta de color{
+    color-scheme:
+    rgb(246, 241, 233)
+    rgb(255, 217, 61)
+    rgb(255, 132, 0)
+    rgb(79, 32, 13)
+    rgb(250, 248, 241)
+    rgb(250, 234, 177)
+    rgb(229, 186, 115)
+    rgb(197, 137, 64)
+    rgb(154, 59, 59)
+    rgb(192, 130, 97)
+    rgb(226, 199, 153)
+    rgb(242, 236, 190)
+} */
+.fuente-principal{
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+
+
+/**-----------------------------HEADER----------------------------------*/
+header{
+    background-color: rgb(197, 137, 64);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.barra-principal ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.barra-principal ul li a{
+    font-family: "Josefin Sans", sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+    
+
+}
+
+
+li {
+    margin: 0.75rem;
+}
+.flex-container{
+    width: 100%;
+    border: 2px solid violet;
+    /*CAJA FLEXIBLE*/
+    display: flex;
+}
+
+.flex-container div{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 40px;
+
+}
+.barra-principal ul li a img:hover{
+    width: 31px;
+    height: auto;
+    
+
+}
+
+.barra-principal ul li a:hover{
+    font-weight: bold;
+    
+
+}
+
+
+/*?-----------------------------MAIN----------------------------------*/
+
+
+.whatsapp a img{
+    position: fixed;
+    top: 800px;
+    right: 38px;
+    
+
+}
+.texto-centrado{
+    margin: 1%;
+    width: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.texto-centrado h1{
+    color: rgb(79, 32, 13);
+    font-size: 5em;
+    text-align: left;
+    
+    
+}
+
+.logo{
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    width: 50%;
+}
+.logo img{
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
+    
+
+}
+
+.logo h2 a{
+    color: rgb(255, 132, 0);
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
+.grid-galeria-productos{
+    max-width:100%;
+    margin: 1%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: repeat(3, 1fr) ;
+    gap: 10px;
+    
+    grid-template-areas: 
+    "pc1g pc4g"
+    "pc2g pc5g"
+    "pc3g pc6g"
+    ;
+    height: 100%;
+}
+.grid-galeria-productos div img{
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
+    -webkit-box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
+    -moz-box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
+} 
+
+.grid-item{
+    position: relative;
+}
+.grid-item h3{
+    position: absolute;
+    bottom: 28.7%;
+    color: bisque;
+    background-color: rgba(0, 0, 0, 0.377);
+    width: 70%;
+    padding: 5px;
+}
+
+
+.pc1{
+    grid-area: pc1g;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+    
+}
+
+.pc2{
+    grid-area: pc2g;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.pc3{
+    grid-area:pc3g;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.pc4{
+    grid-area: pc4g;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.pc5{
+    grid-area: pc5g;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+    
+}
+
+.pc6{
+    grid-area:pc6g;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+
+/*TODO-----------------------------FOOTER------------------------------*/
+
+footer{
+    background-color: azure;
+    margin: 0;
+    padding: 20px; 
+    height: auto;
+    bottom: 0;
+    width: auto;
+}
+
+.grids-footer{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    
+    grid-template-columns:1fr 1fr 0.2fr;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-areas: 
+    "mapag direcciong tiktokg"
+    "mapag emailg instagramg"
+    "mapag telefonog twitchg"
+    ;
+    height: 90%;
+}
+
+.grids-footer div h3{
+    font-size: 25px;
+}
+
+.mapa iframe{
+    width: 900px;
+    height: 300px;
+}
+
+.locacion{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    
+    
+}
+
+.contacto-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contacto-telefono{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.mapa{
+    grid-area: mapag;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.locacion{
+    grid-area: direcciong;
+    
+}
+
+.contacto-email{
+    grid-area: emailg;
+}
+
+.contacto-telefono{
+    grid-area: telefonog;
+}
+
+.TIKTOK{
+    grid-area: tiktokg;
+    
+}
+
+.INSTAGRAM{
+    grid-area: instagramg;
+    align-items: center ;
+}
+
+.TWITCH{
+    grid-area: twitchg;
+}
+
+/*!-----------------------------MEDIA-QUERIES----------------------------------*/
+
+
+@media screen and (max-width: 1600px) {
+
+    .logo{
+        flex-direction: row;
+        display: flex;
+        justify-content: flex-start;
+        margin-left:3%;
+        width: 20%;
+        margin: 1%;
+    }
+    .logo img{
+        width: auto;
+        height: 200px;
+        
+        
+    
+    }
+
+    .texto-centrado h1{
+        color: rgb(79, 32, 13);
+        font-size: 3em;
+        text-align: left;
+        margin: 1%;
+        
+    }
+    .logo h2 a{
+        color: rgb(255, 132, 0);
+        font-size: 2em;
+        text-align: center;
+        text-decoration: none;
+    
+    }
+
+
+    
+    
+    .grids-footer div h3{
+        font-size: 20px;
+    }
+    .TIKTOK a img{
+        width: 30px;
+        height: auto;
+        
+    }
+    
+    .INSTAGRAM a img{
+        width: 30px;
+        height: auto;
+    }
+    
+    .TWITCH a img{
+        width: 30px;
+        height: auto;
+    }
+    .locacion img{
+        width: 30px;
+        height: auto;
+        
+    }
+    
+    .contacto-email img{
+        width: 30px;
+        height: auto;
+    }
+    
+    .contacto-telefono img{
+        width: 30px;
+        height: auto;
+    }
+    .mapa iframe{
+        width: 600px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .logo img{
+        width: auto;
+        height: 150px;
+        margin: 1%;
+        
+    
+    }
+
+    .texto-centrado h1{
+        color: rgb(79, 32, 13);
+        font-size: 2.5em;
+        text-align: left;
+        margin: 1%;
+        
+    }
+    .logo h2 a{
+        color: rgb(255, 132, 0);
+        font-size: 1.5em;
+        text-align: center;
+        text-decoration: none;
+        margin: 1%;
+    }
+
+    .grid-galeria-productos div img{
+        width: 70%;
+        height: 70%;
+        object-fit: cover;
+        box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
+        -webkit-box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
+        -moz-box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
+    } 
+    
+    .grid-item h3{
+        position: absolute;
+        bottom: 28.7%;
+        color: bisque;
+        background-color: rgba(0, 0, 0, 0.377);
+        width: 70%;
+        padding: 5px;
+    }
+
+    .grid-galeria-productos{
+        max-width:100%;
+        margin: 1%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: repeat(6, 1fr) ;
+        gap: 10px;
+        
+        grid-template-areas: 
+        "pc1g"
+        "pc4g"
+        "pc2g"
+        "pc5g"
+        "pc3g"
+        "pc6g"
+        ;
+        height: 100%;
+    }
+
+
+    .grids-footer div h3{
+        font-size: 16px;
+    }
+    .TIKTOK a img{
+        width: 24px;
+        height: auto;
+        
+    }
+    
+    .INSTAGRAM a img{
+        width: 24px;
+        height: auto;
+    }
+    
+    .TWITCH a img{
+        width: 24px;
+        height: auto;
+    }
+    .locacion img{
+        width: 24px;
+        height: auto;
+        
+    }
+    
+    .contacto-email img{
+        width: 24px;
+        height: auto;
+    }
+    
+    .contacto-telefono img{
+        width: 24px;
+        height: auto;
+    }
+    .mapa iframe{
+        width: 400px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .logo img{
+        width: auto;
+        height: 100px;
+        margin: 1%;
+        
+    
+    }
+
+    .texto-centrado h1{
+        color: rgb(79, 32, 13);
+        font-size: 2em;
+        text-align: left;
+        margin: 1%;
+        
+    }
+    .logo h2 a{
+        color: rgb(255, 132, 0);
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
+        margin: 1%;
+    }
+
+
+    .grids-footer div h3{
+        font-size: 24px;
+    }
+    .TIKTOK a img{
+        width: 24px;
+        height: auto;
+        
+    }
+    
+    .INSTAGRAM a img{
+        width: 24px;
+        height: auto;
+        
+    
+    }
+    
+    .TWITCH a img{
+        width: 24px;
+        height: auto;
+        
+        
+    
+    }
+
+
+    .locacion img{
+        width: 24px;
+        height: auto;
+        
+    }
+    
+    .contacto-email img{
+        width: 24px;
+        height: auto;
+    }
+    
+    .contacto-telefono img{
+        width: 24px;
+        height: auto;
+    }
+    .mapa iframe{
+        width: 1fr;
+        height: 200px;
+    }
+    .grids-footer{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        
+        grid-template-columns:1fr;
+        grid-template-rows: 100px 100px repeat(6, 50px);
+        grid-template-areas: 
+        "mapag"
+        "mapag"
+        "direcciong" 
+        "emailg" 
+        "telefonog" 
+        "tiktokg"
+        "instagramg"
+        "twitchg"
+        ;
+        height: 90%;
+    }
+    .locacion{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+        
+        
+    }
+    
+    .contacto-email{
+        display: flex;
+        flex-direction: row;
+        
+        align-items: flex-start;
+    }
+    
+    .contacto-telefono{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        
+    }
+    .TIKTOK{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        
+    }
+    
+    .INSTAGRAM{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+    
+    .TWITCH{
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+    }
+}
