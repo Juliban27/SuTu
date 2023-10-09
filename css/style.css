@@ -6,12 +6,10 @@
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Josefin+Sans:ital,wght@0,500;0,600;1,300;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Rowdies:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
 
 body{
-    background-image: url(../img/background2.png);
+    background-color: rgb(34, 34, 34);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -20,21 +18,16 @@ body{
 
 /* paleta de color{
     color-scheme:
-    rgb(246, 241, 233)
-    rgb(255, 217, 61)
-    rgb(255, 132, 0)
-    rgb(79, 32, 13)
-    rgb(250, 248, 241)
-    rgb(250, 234, 177)
-    rgb(229, 186, 115)
-    rgb(197, 137, 64)
-    rgb(154, 59, 59)
-    rgb(192, 130, 97)
-    rgb(226, 199, 153)
-    rgb(242, 236, 190)
+    rgb(34, 34, 34)
+    rgb(4, 4, 4)
+    rgb(100, 41, 212)
+    rgb(68, 214, 44)
+    rgb(136, 136, 136)
+    rgb(255, 255, 255)
+
 } */
 .fuente-principal{
-    font-family: "Josefin Sans", sans-serif;
+    font-family: 'Gabarito', cursive;
 }
 
 
@@ -43,11 +36,16 @@ body{
 
 /**-----------------------------HEADER----------------------------------*/
 header{
-    background-color: rgb(197, 137, 64);
+    background-color: rgb(4, 4, 4);
     position: sticky;
     top: 0;
     z-index: 1;
 }
+
+.btn-p{
+    background-color: aqua;
+}
+
 
 .barra-principal ul{
     list-style-type: none;
@@ -61,11 +59,15 @@ header{
     font-family: "Josefin Sans", sans-serif;
     font-size: medium;
     text-decoration: none;
-    color: black;
+    color: rgb(136, 136, 136);
     
 
 }
 
+.nav-item .logo-nav{
+    height: 100px;
+    width: auto;
+}
 
 li {
     margin: 0.75rem;
@@ -100,6 +102,305 @@ li {
 
 
 /*?-----------------------------MAIN----------------------------------*/
+
+main{
+    background-color: rgb(34, 34, 34);
+}
+
+.contenedor-corsair{
+    height: 72vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url(../img/linea-corsair1.png);
+    flex-direction: column;
+
+    
+}
+
+
+    
+.contenedor-corsair img{
+    
+    border-radius: 5px;
+}
+
+.contenedor-corsair .texto-corsair-1{
+    margin-top: 40px;
+    margin: 0;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    
+}
+
+.contenedor-corsair .texto-corsair-2{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    
+}
+.contenedor-corsair .texto-corsair-3{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(100, 41, 212);
+    background-color: rgba(4, 4, 4, 0.027);
+    
+    
+}
+.contenedor-corsair a{
+    
+    text-decoration: none;
+    
+}
+
+.contenedor-corsair .texto-corsair-span{
+    text-decoration:underline;
+    color: rgb(236, 232, 26);
+    
+}
+
+.contenedor-corsair .texto-corsair-span2{
+    text-decoration:none;
+    color: rgb(236, 232, 26);
+    
+}
+
+/*RAZER*/
+
+.contenedor-razer{
+    height: 72vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url(../img/linea-razer.webp);
+    flex-direction: column;
+
+    
+}
+
+
+    
+.contenedor-razer img{
+    
+    border-radius: 5px;
+}
+
+.contenedor-razer .texto-razer-1{
+    margin-top: 40px;
+    margin: 0;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    
+}
+
+.contenedor-razer .texto-razer-2{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(238, 238, 238);
+    
+}
+.contenedor-razer .texto-razer-3{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(100, 41, 212);
+    
+    
+    
+}
+.contenedor-razer a{
+    
+    text-decoration: none;
+    
+}
+
+.contenedor-razer .texto-razer-span{
+    text-decoration:underline;
+    color: rgb(68, 214, 44);
+    
+}
+
+.contenedor-razer .texto-razer-span2{
+    text-decoration:none;
+    color: rgb(68, 214, 44);
+    
+}
+
+
+
+
+
+.contenedor-logitech{
+    height: 72vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-image: url(../img/linea-logitech.png);
+    flex-direction: column;
+
+    
+}
+
+
+    
+.contenedor-logitech img{
+    
+    border-radius: 5px;
+}
+
+.contenedor-logitech .texto-logitech-1{
+    margin-top: 40px;
+    margin: 0;
+    font-size: 70px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+    
+}
+
+.contenedor-logitech .texto-logitech-2{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+    
+}
+.contenedor-logitech .texto-logitech-3{
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(100, 41, 212);
+    
+    
+    
+}
+.contenedor-logitech a{
+    
+    text-decoration: none;
+    
+}
+
+.contenedor-logitech .texto-logitech-span{
+    text-decoration:underline;
+    color: rgb(0, 184, 252);
+    
+}
+
+.contenedor-logitech .texto-logitech-span2{
+    text-decoration:none;
+    color: rgb(0, 184, 252);
+    
+}
+
+
+
+
+.custom-btn {
+    width: 400px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-size: 25px;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
+.btn-7 {
+    background: rgba(100, 41, 212);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+    .btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+    .btn-7:before,
+    .btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(100, 41, 212);
+    box-shadow:
+    -7px -7px 20px 0px rgba(255,255,255,.9),
+    -4px -4px 5px 0px rgba(255,255,255,.9),
+    7px 7px 20px 0px rgba(0,0,0,.2),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+}
+    .btn-7:before{
+    height: 0%;
+    width: 2px;
+}
+    .btn-7:after {
+    width: 0%;
+    height: 2px;
+}
+    .btn-7:hover{
+    color: rgba(100, 41, 212);
+    background: transparent;
+}
+    .btn-7:hover:before {
+    height: 100%;
+}
+    .btn-7:hover:after {
+    width: 100%;
+}
+    .btn-7 span:before,
+    .btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(100, 41, 212);
+    box-shadow:
+    -7px -7px 20px 0px rgba(255,255,255,.9),
+    -4px -4px 5px 0px rgba(255,255,255,.9),
+    7px 7px 20px 0px rgba(0,0,0,.2),
+    4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+}
+    .btn-7 span:before {
+    width: 2px;
+    height: 0%;
+}
+    .btn-7 span:after {
+    height: 2px;
+    width: 0%;
+}
+    .btn-7 span:hover:before {
+    height: 100%;
+}
+    .btn-7 span:hover:after {
+    width: 100%;
+}
+
+
+
+
+
+
 
 
 .whatsapp a img{
