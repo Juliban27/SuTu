@@ -107,6 +107,51 @@ main{
     background-color: rgb(34, 34, 34);
 }
 
+
+.carousel-inner .carousel-item .carousel-caption h5{
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.carousel-inner .carousel-item .carousel-caption p{
+    font-size: 20px;
+    
+}
+
+.carousel-inner .carousel-item .carousel-caption{
+    background-color: rgba(34, 34, 34, 0.315);
+    
+    
+    
+}
+
+.texto-recomendacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.texto-recomendacion p{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+.texto-recomendacion p .SuTu-palabra-recomendacion{
+    font-size: 70px;
+}
+
+.texto-recomendacion p .SuTu-palabra-recomendacion .morado-sutu{
+    color: rgb(100, 41, 212);
+}
+
+
+.separador{
+    width: 100%;
+    height: 15px;
+    background-color:rgb(34, 34, 34);
+}
+
 .contenedor-corsair{
     height: 72vh;
     width: 100%;
@@ -303,7 +348,24 @@ main{
 }
 
 
-
+.custom-btn1 {
+    width: 500px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    
+    font-size: 25px;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+}
 
 .custom-btn {
     width: 400px;
@@ -407,7 +469,8 @@ main{
     position: fixed;
     top: 800px;
     right: 38px;
-    
+    width: 100x;
+    height: 100px;
 
 }
 .texto-centrado{
@@ -543,6 +606,175 @@ main{
     justify-content: center;
     
 }
+
+#destacados-grid{
+    width: auto;
+    height: auto;
+}
+
+
+#destacados-grid .texto-desctacado-grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+}
+
+#destacados-grid .texto-desctacado-grid img{
+    width: 200px;
+    height: auto;
+    
+}
+
+#destacados-grid .texto-desctacado-grid h3{
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(100, 41, 212);
+}
+
+.destacados-grid-container img{
+    width: 720px;
+    height: auto;
+}
+
+.destacados-grid-container p{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.destacados-grid-container .span-underline-oferta{
+    text-decoration: underline red;
+}
+
+.destacados-grid-container .span-oferta{
+    text-decoration:line-through;
+    color: rgb(187, 187, 187);
+}
+
+.destacados-grid-container{
+    display: grid;
+    width: auto;
+    margin: 20px;
+    grid-template-columns:49% 49%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "crua-fhd sony-inzone"
+    "msi-katana ryzen7"
+    "msi-mpg samsung-sr35"
+    ;
+    grid-row-gap: 20px; 
+}
+
+.destacados-item-1{
+    grid-area: crua-fhd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.destacados-item-2{
+    grid-area: sony-inzone;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+    
+.destacados-item-3{
+    grid-area: msi-katana;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.destacados-item-4{
+    grid-area: ryzen7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.destacados-item-5{
+    grid-area: msi-mpg;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.destacados-item-6{
+    grid-area: samsung-sr35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.btn-11 {
+    border: none;
+    background: rgb(251, 33, 117);
+    background: linear-gradient(0deg, rgba(100, 41, 212, 1) 0%, rgb(134, 76, 241) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+
+.btn-11:hover {
+    opacity: .7;
+}
+
+.btn-11:active {
+    box-shadow: 4px 4px 6px 0 rgba(255, 255, 255, .3),
+        -4px -4px 6px 0 rgba(116, 125, 136, .2),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, .2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@keyframes shiny-btn1 {
+    0% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0;
+    }
+
+    80% {
+        -webkit-transform: scale(0) rotate(45deg);
+        opacity: 0.5;
+    }
+
+    81% {
+        -webkit-transform: scale(4) rotate(45deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scale(50) rotate(45deg);
+        opacity: 0;
+    }
+}
+
+
+
 
 
 /*TODO-----------------------------FOOTER------------------------------*/
