@@ -7,6 +7,12 @@
     list-style: none;
 }
 
+*::selection{
+    background-color: rgb(100, 41, 212);
+}
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
 
 body{
@@ -1042,6 +1048,144 @@ main{
     -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
     box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
 }
+
+@keyframes Entrar-Izquierda{
+    from{
+        transform: translateX(-600%);
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes Entrar-Arriba{
+    from{
+        transform: translateY(-600%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.separacion-contacto1{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(34, 34, 34);
+}
+
+
+.banner-contacto{
+    background-image: url(../img/banner-contacto.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-contacto .titulo-contacto h2{
+    font-weight: bold;
+    font-size: 90px;
+    color: rgb(255, 255, 255);
+    animation: Entrar-Arriba 2s ease;
+}
+
+.banner-contacto .titulo-contacto{
+    color: #fff;
+}
+
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.ubicacion h3{
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    text-decoration: underline 2px rgb(100, 41, 212);
+    animation: Entrar-Izquierda 4s ease;
+}
+
+.ubicacion div{
+    color: aliceblue;
+}
+
+.ubicacion iframe{
+    color: aliceblue;
+}
+
+.morado-93{
+    color: rgb(100, 41, 212);
+    font-weight: bold;
+}
+
+.separacion-contacto2{
+
+    width: 70%;
+    height: 2px;
+    margin-top: 2%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    background-color: #fff;
+}
+
+.contactos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+    
+}
+
+.contactos h3{
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    text-decoration: underline 2px rgb(100, 41, 212);
+    animation: Entrar-Izquierda 4s ease;
+    
+}
+
+.contactos div ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    transition: all 0.3s ease;
+    margin: 0%;
+    
+}
+
+.contactos div ul li a:hover{
+    color:rgb(167, 167, 167);
+    
+}
+
+.contactos div ul{
+    list-style: none;
+    margin: 0px;
+	padding: 0px;
+}
+
+.informacion{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+}
+
+.contactos div ul li{
+    margin: 0px;
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+
+
+
+
 
 
 
