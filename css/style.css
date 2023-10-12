@@ -1352,9 +1352,36 @@ box-shadow: 0px 0px 14px 15px rgba(100,41,212,0.46);
 
 
 
+.nosotros-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 
+.nosotros-texto h2{
+    color: rgb(100, 41, 212);
+    font-weight: bold;
+    font-size: 100px;
+}
 
+.nosotros-texto img{
+width: 200px;
+height: auto;
+}
 
+.nosotros-texto p{
+    color: rgb(255, 255, 255);
+    
+    font-size: 20px;
+}
+
+.separacion-nosotros{
+    width: 100%;
+    height: 60px;
+}
 
 
 
