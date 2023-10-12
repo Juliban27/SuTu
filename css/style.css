@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style: none;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
@@ -86,20 +87,46 @@ li {
     font-size: 40px;
 
 }
-.barra-principal ul li a img:hover{
-    width: 31px;
-    height: auto;
+
+
+
+
+.barra-principal ul li a{
+    transition: all 0.2s ease;
     
 
 }
 
 .barra-principal ul li a:hover{
-    font-weight: bold;
+    color: rgb(255, 255, 255);
+    padding: 6px;
     
 
 }
 
 
+
+
+
+
+
+
+
+
+.barra-principal div div ul li:hover .menu-vertical{
+    display: block;
+}
+
+
+.barra-principal .container-fluid button{
+    background-color: rgb(100, 41, 212);
+    color: rgb(136, 136, 136);
+    
+}
+.dropdown-menu{
+    width: 400px;
+    height: auto;
+}
 /*?-----------------------------MAIN----------------------------------*/
 
 main{
@@ -513,98 +540,7 @@ main{
 }
 
 
-.grid-galeria-productos{
-    max-width:100%;
-    margin: 1%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: repeat(3, 1fr) ;
-    gap: 10px;
-    
-    grid-template-areas: 
-    "pc1g pc4g"
-    "pc2g pc5g"
-    "pc3g pc6g"
-    ;
-    height: 100%;
-}
-.grid-galeria-productos div img{
-    width: 70%;
-    height: 70%;
-    object-fit: cover;
-    box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
-    -webkit-box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
-    -moz-box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
-} 
 
-.grid-item{
-    position: relative;
-}
-.grid-item h3{
-    position: absolute;
-    bottom: 28.7%;
-    color: bisque;
-    background-color: rgba(0, 0, 0, 0.377);
-    width: 70%;
-    padding: 5px;
-}
-
-
-.pc1{
-    grid-area: pc1g;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    
-    
-}
-
-.pc2{
-    grid-area: pc2g;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    
-}
-
-.pc3{
-    grid-area:pc3g;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    
-}
-
-.pc4{
-    grid-area: pc4g;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    
-}
-
-.pc5{
-    grid-area: pc5g;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    
-    
-}
-
-.pc6{
-    grid-area:pc6g;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    
-}
 
 #destacados-grid{
     width: auto;
@@ -773,106 +709,349 @@ main{
 }
 
 
+.main-catalogo{
+    grid-area: main-catalogog;
+}
+
+.main-carousel-evangelion{
+    grid-area: evangelion-carousel;
+
+}
+
+/*!-----------------------------ASIDE----------------------------------*/
+
+.body-catalogo-grid-container{
+    display: grid;
+    width: 100%;
+    
+    grid-template-columns:30% 70%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "evangelion-info evangelion-carousel"
+    "aside-catalogo main-catalogog"
+    ;
+    height: auto;
+    background-color: rgb(4, 4, 4);
+}
+
+.separador-catalogo{
+    width: 100%;
+    background-color: #fff;
+    height: 90px;
+}
+
+
+
+
+
+.aside{
+    grid-area: aside-catalogo;
+    background-color: rgb(34, 34, 34);
+    
+}
+
+.asusrog-evangelion-aside p{
+    color: rgb(255, 255, 255);
+    text-justify: distribute;
+}
+
+.asusrog-evangelion-aside{
+    grid-area: evangelion-info;
+    display: flex;
+    margin-left:10px;
+    margin-right: 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.asusrog-evangelion-aside h2 {
+    border-bottom: 2px solid rgb(90, 50, 163);
+    font-size: 50px;
+    font-weight: bold;
+    background-image: linear-gradient(to left,
+    rgb(90, 50, 163),
+    rgb(93, 57, 158),
+    rgb(101, 67, 165),
+    rgb(111, 78, 173),
+    rgb(114, 78, 180),
+    rgb(142, 108, 202),
+    rgb(196, 101, 118),
+    rgb(201, 82, 103 ),
+    rgb(203, 28, 59),
+    rgb(203, 28, 59),
+    rgb(203, 28, 59),
+    rgb(203, 28, 59),
+    rgb(203, 28, 59),
+    rgb(203, 28, 59),
+    rgb(203, 28, 59),
+    rgb(201, 82, 103 ),
+    rgb(196, 101, 118),
+    rgb(142, 108, 202),
+    rgb(114, 78, 180),
+    rgb(111, 78, 173),
+    rgb(101, 67, 165),
+    rgb(93, 57, 158));
+    animation: sliding 2000s linear infinite;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes sliding {
+    to {
+        background-position: -2000vw;
+    }
+}
+
+.grid-container-catalogo{
+    display: grid;
+    width: auto;
+    margin: 20px;
+    grid-template-columns:49% 49%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "crua-fhd sony-inzone"
+    "msi-katana ryzen7"
+    "msi-mpg samsung-sr35"
+    ;
+    grid-row-gap: 20px; 
+}
+
+.aside-menu-form{
+    grid-area: aside-catalogo;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+.aside-menu-form .aside-caracteristicas form label{
+    color: rgb(136, 136, 136);
+}
+
+.aside-menu-form .aside-caracteristicas form label{
+
+    transition: all 0.3s ease;
+}
+
+.aside-menu-form .aside-caracteristicas form label:hover{
+    color: rgb(255, 255, 255);
+    padding-left: 3px;
+    
+}
+
+
+.barra-separacion-caracteristicas1{
+    width: 100%;
+    height: 2px;
+    background-color: rgb(136, 136, 136);
+}
+
+
+.barra-separacion-caracteristicas{
+    width: 70%;
+    height: 2px;
+    background-color: rgb(136, 136, 136);
+}
+
+.boton-aside{
+    
+    border: 0;
+    overflow: visible;
+    padding: 0;
+    font-size: 21.69px;
+    line-height: normal;
+    background: none;
+    border: 0;
+    color: rgb(255, 255, 255);
+    -user-select: none; /* for button */
+    -appearance: button; /* for input */
+    -user-select: none;
+    -user-select: none;
+    transition: all 0.3s ease;
+    
+}
+
+.boton-aside:hover{
+    padding-left: 5px;
+    
+}
+
+.flecha-aside{ 
+    display: inline-block;
+    color: rgb(100, 41, 212);
+    transition: all 0.3s ease;
+    
+}
+
+.flecha-aside:hover{
+    color: rgb(100, 41, 212);
+    transform: rotate(90deg) !important ; 
+    
+}
+
+
+
+
+
+.main-catalogo{
+    margin-top: 20px;
+        width: 100%;
+        grid-row-gap: 20px;
+    -ms-grid-row-align: center;
+    -ms-grid-column-align: center;
+        grid-template-columns:33% 33% 33%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "nzxt samsung msi"
+        "amd intel nvidia"
+        "hyperx1 razer1 logitech1"
+        "asus corsair1 nzxtpsu"
+        ;
+
+    
+    display: grid;
+    background-color: rgb(4, 4, 4);
+}
+.main-catalogo div{
+    display: flex;
+    height: auto;
+    width: 302px;
+    align-items: baseline;
+    justify-self: center;
+    flex-direction: column;
+
+    
+}
+
+.main-catalogo div img{
+    height: 300px;
+    width: 300px;
+}
+
+
+.descripcion-grid-catalogo{
+    font-weight: bold;
+    background-color: rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    height: auto;
+    width: auto;
+    transition: all 0.3s ease;
+    
+}
+
+.descripcion-grid-catalogo a{
+    color: rgb(100, 41, 212);
+    transition: all 0.3s ease;
+    text-decoration: none;
+    
+}
+
+
+
+
+
+.descripcion-grid-catalogo a svg{
+    
+    height: 20px;
+    width: auto;
+}
+
+.descripcion-grid-catalogo a:hover{
+    color: rgb(77, 31, 163);
+    
+}
+
+.grid-item-catalogo-nzxt{
+    grid-area: nzxt;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+
+}
+
+.grid-item-catalogo-samsung{
+    grid-area: samsung;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+
+.grid-item-catalogo-msi{
+    grid-area: msi;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+.grid-item-catalogo-amd{
+    grid-area: amd;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+.grid-item-catalogo-intel{
+    grid-area: intel;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+.grid-item-catalogo-nvidia{
+    grid-area: nvidia;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+.grid-item-catalogo-hyperx{
+    grid-area: hyperx1;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+.grid-item-catalogo-razer{
+    grid-area: razer1;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+
+.grid-item-catalogo-logitech{
+    grid-area: logitech1;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+.grid-item-catalogo-asus{
+    grid-area: asus;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+.grid-item-catalogo-corsair{
+    grid-area: corsair1;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
+.grid-item-catalogo-nzxtpsu{
+    grid-area: nzxtpsu;
+    -webkit-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    -moz-box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+    box-shadow: 0px 0px 23px 7px rgba(100,41,212,1);
+}
 
 
 
 /*TODO-----------------------------FOOTER------------------------------*/
 
-/* footer{
-    background-color: azure;
-    margin: 0;
-    padding: 20px; 
-    height: auto;
-    bottom: 0;
-    width: auto;
-}
-
-.grids-footer{
-    width: 90%;
-    margin: 0 auto;
-    display: grid;
-    
-    grid-template-columns:1fr 1fr 0.2fr;
-    grid-template-rows: 100px 100px 100px;
-    grid-template-areas: 
-    "mapag direcciong tiktokg"
-    "mapag emailg instagramg"
-    "mapag telefonog twitchg"
-    ;
-    height: 90%;
-}
-
-.grids-footer div h3{
-    font-size: 25px;
-}
-
-.mapa iframe{
-    width: 900px;
-    height: 300px;
-}
-
-.locacion{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-    
-    
-}
-
-.contacto-email{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.contacto-telefono{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.mapa{
-    grid-area: mapag;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.locacion{
-    grid-area: direcciong;
-    
-}
-
-.contacto-email{
-    grid-area: emailg;
-}
-
-.contacto-telefono{
-    grid-area: telefonog;
-}
-
-.TIKTOK{
-    grid-area: tiktokg;
-    
-}
-
-.INSTAGRAM{
-    grid-area: instagramg;
-    align-items: center ;
-}
-
-.TWITCH{
-    grid-area: twitchg;
-} */
 
 .footer{
     background-color: rgb(4, 4, 4);
     padding: 80px 0;
-    
+    height: 600px;
     
 }
 
@@ -892,10 +1071,18 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+    
 }
 .redes-socialesx a img{
     width: 70px;
     height: 70px;
+    transition: all 0.3s ease-out;
+}
+
+.redes-socialesx a img:hover{
+    width: 75px;
+    height: 75px;
 }
 
 .footer-enlaces{
@@ -906,8 +1093,25 @@ main{
 .footer-enlaces h4{
     color: rgb(136, 136, 136);
     font-weight: bold;
-    border-bottom: 2px solid rgb(100, 41, 212);
+    border-bottom: 2px solid rgb(100, 41, 212) ;
     padding-bottom: 10px;
+    
+}
+
+.footer-enlaces ul li a{
+    transition: all 0.3s ease;
+    font-size: 17px;
+    color: rgb(136, 136, 136);
+    text-decoration: none;
+    display: block;
+    
+}
+
+.footer-enlaces ul li a:hover{
+    
+    
+    color: rgb(255, 255, 255);
+    padding-left: 5px;
 }
 
 
@@ -926,7 +1130,19 @@ main{
     box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
     width: 500px;
     height: 200px;
+    margin-left:20px;
 }
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 10px;
+    color: rgb(136, 136, 136);
+    width: 100%;
+    height: 11px;
+}
+
 /*!-----------------------------MEDIA-QUERIES----------------------------------*/
 
 
