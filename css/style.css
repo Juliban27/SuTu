@@ -152,9 +152,6 @@ main{
 
 .carousel-inner .carousel-item .carousel-caption{
     background-color: rgba(34, 34, 34, 0.315);
-    
-    
-    
 }
 
 .texto-recomendacion{
@@ -193,7 +190,7 @@ main{
     align-items: center;
     background-image: url(../img/linea-corsair1.png);
     flex-direction: column;
-
+    background-size: cover;
     
 }
 
@@ -258,7 +255,7 @@ main{
     align-items: center;
     background-image: url(../img/linea-razer.webp);
     flex-direction: column;
-
+    background-size: cover;
     
 }
 
@@ -325,7 +322,7 @@ main{
     align-items: center;
     background-image: url(../img/linea-logitech.png);
     flex-direction: column;
-
+    background-size: cover;
     
 }
 
@@ -1365,6 +1362,7 @@ box-shadow: 0px 0px 14px 15px rgba(100,41,212,0.46);
     color: rgb(100, 41, 212);
     font-weight: bold;
     font-size: 100px;
+    animation: Entrar-Arriba 4s ease;
 }
 
 .nosotros-texto img{
@@ -1490,307 +1488,1256 @@ height: auto;
 
 
 @media screen and (max-width: 1600px) {
+/*?-----------------------------INDEX----------------------------------*/
+.texto-recomendacion p{
+    font-size: 40px;
+}
 
-    .logo{
-        flex-direction: row;
-        display: flex;
-        justify-content: flex-start;
-        margin-left:3%;
-        width: 20%;
-        margin: 1%;
-    }
-    .logo img{
-        width: auto;
-        height: 200px;
-        
-        
+.texto-recomendacion p .SuTu-palabra-recomendacion{
+    font-size: 60px;
+}
+
+#destacados-grid .texto-desctacado-grid img{
+    width: 180px;
+    height: auto;
     
+}
+
+#destacados-grid .texto-desctacado-grid h3{
+    font-size: 46px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(100, 41, 212);
+}    
+
+.contenedor-corsair{
+    height: 67vh;
+    width: 100%;
+}
+.contenedor-corsair .texto-corsair-1{
+    font-size: 65px;
+}
+
+.contenedor-corsair .texto-corsair-2{
+    font-size: 35px;
+}
+.contenedor-corsair .texto-corsair-3{
+    font-size: 25px;
+}
+
+.contenedor-razer .texto-razer-1{
+    font-size: 57px;
+}
+
+.contenedor-razer .texto-razer-2{
+    font-size: 35px;
+}
+.contenedor-razer .texto-razer-3{
+    font-size:  25px;
+}
+
+.contenedor-razer{
+    height: 72vh;
+    width: 100%;
+}
+.contenedor-logitech .texto-logitech-1{
+    font-size: 57px;
+}
+
+.contenedor-logitech .texto-logitech-2{
+    font-size: 35px;
+}
+.contenedor-logitech .texto-logitech-3{
+    font-size: 25px;
+}
+
+
+
+.custom-btn {
+    width: 375px;
+    height: 35px;
+}
+
+.contenedor-corsair a button span{
+font-size:25px;
+}
+
+
+.destacados-grid-container img{
+    width: 600px;
+    height: auto;
     }
 
-    .texto-centrado h1{
-        color: rgb(79, 32, 13);
-        font-size: 3em;
-        text-align: left;
-        margin: 1%;
+/*?-----------------------------Catalogo----------------------------------*/
+    .main-catalogo div img{
+        height: 270px;
+        width: 270px;
+    }
+
+    .main-catalogo div{
+
+        width: 270px;
+
         
     }
-    .logo h2 a{
-        color: rgb(255, 132, 0);
-        font-size: 2em;
-        text-align: center;
-        text-decoration: none;
-    
+
+    .body-catalogo-grid-container{
+        grid-template-columns:100%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "evangelion-info"
+        "evangelion-carousel"
+        "aside-catalogo"
+        "main-catalogog"
+        ;
+        background-color: rgb(4, 4, 4);
+    }
+
+    .nosotros-texto h2{
+        font-size: 80px;
+    }
+
+    .nosotros-texto img{
+        width: 150px;
+        height: auto;
+        }
+        
+/**-----------------------------FOOTER----------------------------------*/
+    .footer{
+        height: auto;
+        
     }
 
 
-    
-    
-    .grids-footer div h3{
-        font-size: 20px;
-    }
-    .TIKTOK a img{
-        width: 30px;
+
+    .footer-enlaces{
+        width: 25%;
         height: auto;
         
     }
-    
-    .INSTAGRAM a img{
-        width: 30px;
-        height: auto;
-    }
-    
-    .TWITCH a img{
-        width: 30px;
-        height: auto;
-    }
-    .locacion img{
-        width: 30px;
-        height: auto;
+
+    .redes-socialesx{
+
+        flex-direction: column;
+        justify-content: space-around;
+        
         
     }
-    
-    .contacto-email img{
-        width: 30px;
-        height: auto;
-    }
-    
-    .contacto-telefono img{
-        width: 30px;
-        height: auto;
-    }
+
+
+
     .mapa iframe{
-        width: 600px;
+        width: 2; 
+    }
+
+    .item-flex-carrito img{
+        width: 300px;
         height: 300px;
     }
+    
+    .item-flex-carrito{
+        width: 300px;
+        height: 400px;
+    }
+    
+
+    .boton-añadir-carritoz{
+        margin-left: 17%;
+        margin-top: 20px;
+    
+    }
+
+}
+
+
+@media screen and (max-width: 1300px) {
+    /*?-----------------------------INDEX----------------------------------*/
+    .texto-recomendacion p{
+        font-size: 40px;
+    }
+
+    .texto-recomendacion p .SuTu-palabra-recomendacion{
+        font-size: 60px;
+    }
+    
+    
+    .carousel-inner .carousel-item .carousel-caption h5{
+        font-size: 60px;
+        font-weight: bold;
+    }
+    
+    .carousel-inner .carousel-item .carousel-caption p{
+        font-size: 16px;
+        
+    }
+    
+
+
+
+    .contenedor-corsair{
+        height: 64vh;
+        width: 100%;
+    }
+    .contenedor-corsair .texto-corsair-1{
+        font-size: 57px;
+    }
+    
+    .contenedor-corsair .texto-corsair-2{
+        font-size: 27px;
+    }
+    .contenedor-corsair .texto-corsair-3{
+        font-size: 17px;
+    }
+    
+    .contenedor-razer .texto-razer-1{
+        font-size: 57px;
+    }
+    
+    .contenedor-razer .texto-razer-2{
+        font-size: 27px;
+    }
+    .contenedor-razer .texto-razer-3{
+        font-size: 17px;
+    }
+    
+    .contenedor-razer{
+        height: 72vh;
+        width: 100%;
+    }
+    .contenedor-logitech .texto-logitech-1{
+        font-size: 57px;
+    }
+    
+    .contenedor-logitech .texto-logitech-2{
+        font-size: 27px;
+    }
+    .contenedor-logitech .texto-logitech-3{
+        font-size: 17px;
+    }
+
+
+
+
+
+
+
+
+    .custom-btn {
+        width: 350px;
+        height: 30px;
+    }
+    
+    .contenedor-corsair a button span{
+    font-size:17px;
+    }
+
+
+
+    
+    #destacados-grid .texto-desctacado-grid img{
+        width: 160px;
+        height: auto;
+        
+    }
+    
+    #destacados-grid .texto-desctacado-grid h3{
+        font-size: 42px;
+        color: rgb(255, 255, 255);
+        text-decoration: underline rgb(100, 41, 212);
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .destacados-grid-container img{
+        width: 400px;
+        height: auto;
+    }
+
+    .destacados-grid-container p{
+            font-size: 25px;
+    }
+
+    .custom-btn1 {
+        width: 400px;
+        height: 30px;
+        font-size: 21px;
+    }
+
+/*?-----------------------------Catalogo----------------------------------*/
+.main-catalogo div img{
+    height: 220px;
+    width: 220px;
+}
+
+.main-catalogo div{
+
+    width: 220px;
+
+    
+}
+
+.descripcion-grid-catalogo h6{
+    font-size: 14px;
+    
+}
+
+.descripcion-grid-catalogo h5{
+    font-size: 20px;
+    
+}
+
+.body-catalogo-grid-container{
+    grid-template-columns:100%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "evangelion-info"
+    "evangelion-carousel"
+    "aside-catalogo"
+    "main-catalogog"
+    ;
+    background-color: rgb(4, 4, 4);
+}
+/*!-----------------------------CONTACTO----------------------------------*/
+.ubicacion iframe{
+    width: 300px;
+    height: 300px;
+}
+
+.ubicacion{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.contactos{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    
+}
+
+.banner-contacto .titulo-contacto h2{
+    font-size: 80px;
+}
+
+
+.item-flex-carrito img{
+    width: 300px;
+    height: 300px;
+}
+
+.item-flex-carrito{
+    width: 300px;
+    height: 400px;
+    margin-bottom: 3%;
+}
+
+.contenedor-flex-carrito{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+    margin-bottom: 6%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.boton-añadir-carritoz{
+    margin-left: 17%;
+
+}
+
+
+/**-----------------------------FOOTER----------------------------------*/
+        .footer{
+            height: auto;
+            
+        }
+    
+    
+    
+        .footer-enlaces{
+            width: 25%;
+            height: auto;
+            
+        }
+
+        .imagenes-informacion li a img{
+            width: 50px;
+            height:50px;
+        }
+    
+        .redes-socialesx{
+    
+            flex-direction: column;
+            justify-content: space-around;
+            
+            
+        }
+        
+        .redes-socialesx a img{
+            width: 50px;
+            height: 50px;
+
+        }
+    
+    
+        .mapa iframe{
+            width: 2; 
+        }
+    
+    
+        .footer-enlaces h4{
+            font-size: 20px;
+            
+        }
+        
+        .footer-enlaces ul li a{
+            font-size: 15px;            
+        }
+
+        .copyright{
+            justify-content: right;
+            align-items: end;
+        }
+
+
 }
 
 @media screen and (max-width: 1000px) {
-    .logo img{
-        width: auto;
-        height: 150px;
-        margin: 1%;
-        
-    
-    }
-
-    .texto-centrado h1{
-        color: rgb(79, 32, 13);
-        font-size: 2.5em;
-        text-align: left;
-        margin: 1%;
-        
-    }
-    .logo h2 a{
-        color: rgb(255, 132, 0);
-        font-size: 1.5em;
-        text-align: center;
-        text-decoration: none;
-        margin: 1%;
-    }
-
-    .grid-galeria-productos div img{
-        width: 70%;
-        height: 70%;
-        object-fit: cover;
-        box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
-        -webkit-box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
-        -moz-box-shadow: 1px 0px 20px 15px rgba(71,68,68,0.75);
-    } 
-    
-    .grid-item h3{
-        position: absolute;
-        bottom: 28.7%;
-        color: bisque;
-        background-color: rgba(0, 0, 0, 0.377);
-        width: 70%;
-        padding: 5px;
-    }
-
-    .grid-galeria-productos{
-        max-width:100%;
-        margin: 1%;
-        display: grid;
-        grid-template-columns: 100%;
-        grid-auto-rows: repeat(6, 1fr) ;
-        gap: 10px;
-        
-        grid-template-areas: 
-        "pc1g"
-        "pc4g"
-        "pc2g"
-        "pc5g"
-        "pc3g"
-        "pc6g"
-        ;
-        height: 100%;
-    }
-
-
-    .grids-footer div h3{
-        font-size: 16px;
-    }
-    .TIKTOK a img{
-        width: 24px;
-        height: auto;
-        
-    }
-    
-    .INSTAGRAM a img{
-        width: 24px;
-        height: auto;
-    }
-    
-    .TWITCH a img{
-        width: 24px;
-        height: auto;
-    }
-    .locacion img{
-        width: 24px;
-        height: auto;
-        
-    }
-    
-    .contacto-email img{
-        width: 24px;
-        height: auto;
-    }
-    
-    .contacto-telefono img{
-        width: 24px;
-        height: auto;
-    }
-    .mapa iframe{
-        width: 400px;
-        height: 300px;
-    }
+/*?-----------------------------INDEX----------------------------------*/
+.texto-recomendacion p{
+    font-size: 30px;
+}
+.texto-recomendacion p .SuTu-palabra-recomendacion{
+    font-size: 47px;
 }
 
-@media screen and (max-width: 800px) {
-    .logo img{
-        width: auto;
-        height: 100px;
-        margin: 1%;
-        
-    
-    }
-
-    .texto-centrado h1{
-        color: rgb(79, 32, 13);
-        font-size: 2em;
-        text-align: left;
-        margin: 1%;
-        
-    }
-    .logo h2 a{
-        color: rgb(255, 132, 0);
-        font-size: 1em;
-        text-align: center;
-        text-decoration: none;
-        margin: 1%;
-    }
+.texto-recomendacion p .SuTu-palabra-recomendacion .morado-sutu{
+font-size: 47px;
+}
 
 
-    .grids-footer div h3{
-        font-size: 24px;
-    }
-    .TIKTOK a img{
-        width: 24px;
-        height: auto;
-        
-    }
+.carousel-inner .carousel-item .carousel-caption h5{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.carousel-inner .carousel-item .carousel-caption p{
+    font-size: 14px;
     
-    .INSTAGRAM a img{
-        width: 24px;
-        height: auto;
-        
+}
+
+#destacados-grid .texto-desctacado-grid img{
+    width: 140px;
+    height: auto;
     
-    }
-    
-    .TWITCH a img{
-        width: 24px;
-        height: auto;
-        
-        
-    
-    }
+}
+
+#destacados-grid .texto-desctacado-grid h3{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(100, 41, 212);
+}
 
 
-    .locacion img{
-        width: 24px;
+.contenedor-corsair{
+    height: 72vh;
+    width: 100%;
+}
+.contenedor-corsair .texto-corsair-1{
+    font-size: 70px;
+}
+
+.contenedor-corsair .texto-corsair-2{
+    font-size: 40px;
+}
+.contenedor-corsair .texto-corsair-3{
+    font-size: 30px;
+}
+
+.contenedor-razer{
+    height: 72vh;
+    width: 100%;
+}
+
+.contenedor-razer .texto-razer-1{
+    font-size: 70px;
+}
+
+.contenedor-razer .texto-razer-2{
+    font-size: 40px;
+}
+.contenedor-razer .texto-razer-3{
+    font-size: 30px;
+}
+
+.contenedor-razer{
+    height: 72vh;
+    width: 100%;
+}
+.contenedor-logitech .texto-logitech-1{
+    font-size: 70px;
+}
+
+.contenedor-logitech .texto-logitech-2{
+    font-size: 40px;
+}
+.contenedor-logitech .texto-logitech-3{
+    font-size: 30px;
+}
+
+
+
+
+
+.custom-btn {
+    width: 400px;
+    height: 40px;
+}
+
+
+
+.destacados-grid-container img{
+        width: 350px;
         height: auto;
-        
     }
     
-    .contacto-email img{
-        width: 24px;
-        height: auto;
+    .destacados-grid-container p{
+        font-size: 20px;
     }
     
-    .contacto-telefono img{
-        width: 24px;
-        height: auto;
+    .custom-btn1 {
+        width: 350px;
+        height: 30px;
+        font-size: 17px;
     }
-    .mapa iframe{
-        width: 1fr;
-        height: 200px;
-    }
-    .grids-footer{
-        width: 90%;
-        margin: 0 auto;
-        display: grid;
-        
-        grid-template-columns:1fr;
-        grid-template-rows: 100px 100px repeat(6, 50px);
+
+/*?-----------------------------Catalogo----------------------------------*/
+
+.main-catalogo{
+        grid-template-columns:50% 50%;
+        grid-template-rows: repeat(auto,6);
         grid-template-areas: 
-        "mapag"
-        "mapag"
-        "direcciong" 
-        "emailg" 
-        "telefonog" 
-        "tiktokg"
-        "instagramg"
-        "twitchg"
+        "nzxt samsung"
+        "amd msi"
+        "intel nvidia"
+        "hyperx1 razer1" 
+        "asus logitech1"
+        "corsair1 nzxtpsu"
         ;
-        height: 90%;
+
+    
+    display: grid;
+    background-color: rgb(4, 4, 4);
+}
+
+
+
+
+.main-catalogo div img{
+    height: 250px;
+    width: 250px;
+}
+
+.main-catalogo div{
+
+    width: 250px;
+
+    
+}
+
+.descripcion-grid-catalogo h6{
+    font-size: 17px;
+    
+}
+
+.descripcion-grid-catalogo h5{
+    font-size: 25px;
+    
+}
+    
+    /**-----------------------------FOOTER----------------------------------*/
+        .footer{
+            height: auto;
+            
+        }
+    
+    
+    
+        .footer-enlaces{
+            width: 100%;
+            height: auto;
+            
+        }
+
+    
+        .redes-socialesx{
+    
+            flex-direction: row;
+            justify-content: space-around;
+            
+            
+        }
+        
+        
+
+
+
+
+        .copyright{
+            justify-content: right;
+            align-items: end;
+        }
+
+        .row-footer{
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+        
+}
+
+
+@media screen and (max-width: 800px) {
+
+
+/*?-----------------------------INDEX----------------------------------*/
+.contenedor-corsair .texto-corsair-1{
+    font-size: 70px;
+}
+
+.contenedor-corsair .texto-corsair-2{
+    font-size: 40px;
+}
+.contenedor-corsair .texto-corsair-3{
+    font-size: 30px;
+}
+
+.contenedor-razer{
+    height: 72vh;
+    width: 100%;
+}
+
+.contenedor-razer .texto-razer-1{
+    font-size: 70px;
+}
+
+.contenedor-razer .texto-razer-2{
+    font-size: 40px;
+}
+.contenedor-razer .texto-razer-3{
+    font-size: 30px;
+}
+
+.contenedor-razer{
+    height: 72vh;
+    width: 100%;
+}
+.contenedor-logitech .texto-logitech-1{
+    font-size: 70px;
+}
+
+.contenedor-logitech .texto-logitech-2{
+    font-size: 40px;
+}
+.contenedor-logitech .texto-logitech-3{
+    font-size: 30px;
+}
+
+#destacados-grid .texto-desctacado-grid img{
+    width: 140px;
+    height: auto;
+    
+}
+
+#destacados-grid .texto-desctacado-grid h3{
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-decoration: underline rgb(100, 41, 212);
+}
+
+
+.destacados-grid-container img{
+    width: 400px;
+    height: auto;
+}
+
+.destacados-grid-container p{
+    font-size: 25px;
+}
+
+.custom-btn1 {
+width: 400px;
+height: 30px;
+font-size: 21px;
+}
+
+.destacados-grid-container{
+    margin: 20px;
+    grid-template-columns:99%;
+    grid-template-rows: repeat(auto,6);
+    grid-template-areas: 
+    "crua-fhd"
+    "sony-inzone" 
+    "msi-katana"
+    "ryzen7" 
+    "msi-mpg"
+    "samsung-sr35" 
+    ;
+    grid-row-gap: 20px; 
+}
+
+/*?-----------------------------Catalogo----------------------------------*/
+
+.main-catalogo{
+    grid-template-columns:100%;
+    grid-template-rows: repeat(auto,12);
+    grid-template-areas: 
+    "nzxt"
+    "samsung"
+    "amd"
+    "msi"
+    "intel"
+    "nvidia"
+    "hyperx1"
+    "razer1" 
+    "asus"
+    "logitech1"
+    "corsair1"
+    "nzxtpsu"
+    ;
+
+
+display: grid;
+background-color: rgb(4, 4, 4);
+}
+
+
+
+
+.main-catalogo div img{
+height: 250px;
+width: 250px;
+}
+
+.main-catalogo div{
+
+width: 250px;
+
+
+}
+
+.descripcion-grid-catalogo h6{
+font-size: 20px;
+
+}
+
+
+
+    /**-----------------------------FOOTER----------------------------------*/
+        .footer{
+            height: auto;
+            
+        }
+    
+    
+    
+        .footer-enlaces{
+            width: 100%;
+            height: auto;
+            
+        }
+
+    
+        .redes-socialesx{
+    
+            flex-direction: row;
+            justify-content: space-around;
+            
+            
+        }
+        
+        
+
+
+
+        .copyright{
+            margin-top: 4%;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .row-footer{
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+        
+}
+
+
+
+@media screen and (max-width: 540px) {
+    .contenedor-corsair .texto-corsair-1{
+        font-size: 70px;
     }
-    .locacion{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        
-        
+    
+    .contenedor-corsair .texto-corsair-2{
+        font-size: 40px;
+    }
+    .contenedor-corsair .texto-corsair-3{
+        font-size: 30px;
+    }
+    
+    .contenedor-razer{
+        height: 72vh;
+        width: 100%;
+    }
+    
+    .contenedor-razer .texto-razer-1{
+        font-size: 70px;
+    }
+    
+    .contenedor-razer .texto-razer-2{
+        font-size: 40px;
+    }
+    .contenedor-razer .texto-razer-3{
+        font-size: 30px;
+    }
+    
+    .contenedor-razer{
+        height: 72vh;
+        width: 100%;
+    }
+    .contenedor-logitech .texto-logitech-1{
+        font-size: 70px;
+    }
+    
+    .contenedor-logitech .texto-logitech-2{
+        font-size: 40px;
+    }
+    .contenedor-logitech .texto-logitech-3{
+        font-size: 30px;
+    }
+
+
+    .custom-btn {
+        width: 300px;
+        height: 30px;
+    }
+    
+    #destacados-grid .texto-desctacado-grid img{
+        width: 90px;
+        height: auto;
         
     }
     
-    .contacto-email{
-        display: flex;
-        flex-direction: row;
+    #destacados-grid .texto-desctacado-grid h3{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        text-decoration: underline rgb(100, 41, 212);
+    }
+
+.destacados-grid-container img{
+    width: 350px;
+    height: auto;
+}
+
+.destacados-grid-container p{
+    font-size: 21px;
+}
+
+.custom-btn1 {
+width: 350px;
+height: 30px;
+font-size: 17px;
+}
+
+.destacados-grid-container{
+    margin: 20px;
+    grid-template-columns:99%;
+    grid-template-rows: repeat(auto,6);
+    grid-template-areas: 
+    "crua-fhd"
+    "sony-inzone" 
+    "msi-katana"
+    "ryzen7" 
+    "msi-mpg"
+    "samsung-sr35" 
+    ;
+    grid-row-gap: 20px; 
+}
+
+/*?-----------------------------Catalogo----------------------------------*/
+
+.main-catalogo{
+    grid-template-columns:100%;
+    grid-template-rows: repeat(auto,12);
+    grid-template-areas: 
+    "nzxt"
+    "samsung"
+    "amd"
+    "msi"
+    "intel"
+    "nvidia"
+    "hyperx1"
+    "razer1" 
+    "asus"
+    "logitech1"
+    "corsair1"
+    "nzxtpsu"
+    ;
+
+
+display: grid;
+background-color: rgb(4, 4, 4);
+}
+
+
+
+
+.main-catalogo div img{
+height: 250px;
+width: 250px;
+}
+
+.main-catalogo div{
+
+width: 250px;
+
+
+}
+
+.descripcion-grid-catalogo h6{
+font-size: 20px;
+
+}
+
+
+.banner-contacto .titulo-contacto h2{
+    font-size: 60px;
+}
+
+
+    /**-----------------------------FOOTER----------------------------------*/
+        .footer{
+            height: auto;
+            
+        }
+    
+    
+    
+        .footer-enlaces{
+            width: 100%;
+            height: auto;
+            
+        }
+
+    
+        .redes-socialesx{
+    
+            flex-direction: row;
+            justify-content: space-around;
+            
+            
+        }
         
-        align-items: flex-start;
+        
+
+
+
+        .copyright{
+            margin-top: 4%;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .row-footer{
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+        .mapa iframe{
+            border-radius: 50px 50px 50px 50px;
+            border: 2px solid rgba(100,41,212,1);
+            -webkit-border-radius: 59px 59px 59px 59px;
+            -moz-border-radius: 59px 59px 59px 59px;
+            -webkit-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+            -moz-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+            box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+            width: 350px;
+            height: 150px;
+            margin-left:20px;
+        }
+
+}
+
+@media screen and (max-width: 380px) {
+/*?-----------------------------HEADER----------------------------------*/
+
+
+.contenedor-logitech .texto-logitech-1{
+    font-size: 40px;
+}
+.contenedor-corsair .texto-corsair-1{
+    font-size: 40px;
+}
+
+.contenedor-corsair .texto-corsair-2{
+    font-size: 20px;
+}
+.contenedor-corsair .texto-corsair-3{
+    font-size: 30px;
+}
+
+.contenedor-razer{
+    height: 72vh;
+    width: 100%;
+}
+
+.contenedor-razer .texto-razer-1{
+    font-size: 40px;
+}
+
+.contenedor-razer .texto-razer-2{
+    font-size: 20px;
+}
+.contenedor-razer .texto-razer-3{
+    font-size: 30px;
+}
+
+.contenedor-razer{
+    height: 72vh;
+    width: 100%;
+}
+
+
+.contenedor-logitech .texto-logitech-2{
+    font-size: 20px;
+}
+.contenedor-logitech .texto-logitech-3{
+    font-size: 30px;
+}
+    #destacados-grid .texto-desctacado-grid img{
+        width: 70px;
+        height: auto;
+        
     }
     
-    .contacto-telefono{
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        
+    #destacados-grid .texto-desctacado-grid h3{
+        font-size: 25px;
+        color: rgb(255, 255, 255);
+        text-decoration: underline rgb(100, 41, 212);
     }
-    .TIKTOK{
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-        
-    }
+
+.destacados-grid-container img{
+    width: 300px;
+    height: auto;
+}
+
+.destacados-grid-container p{
+    font-size: 17px;
+}
+
+.custom-btn1 {
+width: 300px;
+height: 30px;
+font-size: 13px;
+}
+
+.destacados-grid-container{
+    margin: 20px;
+    grid-template-columns:99%;
+    grid-template-rows: repeat(auto,6);
+    grid-template-areas: 
+    "crua-fhd"
+    "sony-inzone" 
+    "msi-katana"
+    "ryzen7" 
+    "msi-mpg"
+    "samsung-sr35" 
+    ;
+    grid-row-gap: 20px; 
+}   
     
-    .INSTAGRAM{
-        display: flex;
-        align-items: center; 
-        justify-content: center;
-    }
+
+
+
+
+/*?-----------------------------Catalogo----------------------------------*/
+
+.main-catalogo{
+    grid-template-columns:100%;
+    grid-template-rows: repeat(auto,12);
+    grid-template-areas: 
+    "nzxt"
+    "samsung"
+    "amd"
+    "msi"
+    "intel"
+    "nvidia"
+    "hyperx1"
+    "razer1" 
+    "asus"
+    "logitech1"
+    "corsair1"
+    "nzxtpsu"
+    ;
+
+
+display: grid;
+background-color: rgb(4, 4, 4);
+}
+
+
+
+
+.main-catalogo div img{
+height: 200px;
+width: 200px;
+}
+
+.main-catalogo div{
+
+width: 200px;
+
+
+}
+
+.descripcion-grid-catalogo h6{
+font-size: 10px;
+
+}
+
+
+    /**-----------------------------FOOTER----------------------------------*/
+        .footer{
+            height: auto;
+            
+        }
     
-    .TWITCH{
-        display: flex;
-        align-items: center; 
-        justify-content: center;
+    
+    
+        .footer-enlaces{
+            width: 100%;
+            height: auto;
+            
+        }
+
+    
+        .redes-socialesx{
+    
+            flex-direction: row;
+            justify-content: space-around;
+            
+            
+        }
+        
+        
+
+
+
+
+        .copyright{
+            margin-top: 4%;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .row-footer{
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+        .mapa iframe{
+            border-radius: 50px 50px 50px 50px;
+            border: 2px solid rgba(100,41,212,1);
+            -webkit-border-radius: 59px 59px 59px 59px;
+            -moz-border-radius: 59px 59px 59px 59px;
+            -webkit-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+            -moz-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+            box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+            width: 250px;
+            height: 150px;
+            margin-left:40px;
+        }
+
+}
+
+@media screen and (max-width: 300px) {
+    /*?-----------------------------HEADER----------------------------------*/
+    
+    .banner-contacto .titulo-contacto h2{
+        font-size: 40px;
     }
+    /**-----------------------------FOOTER----------------------------------*/
+        .footer{
+            height: auto;
+            
+        }
+    
+    
+    
+        .footer-enlaces{
+            width: 100%;
+            height: auto;
+            
+        }
+
+    
+        .redes-socialesx{
+    
+            flex-direction: row;
+            justify-content: space-around;
+            
+            
+        }
+        
+        .redes-socialesx a img{
+            width: 30px;
+            height: 30px;
+
+        }
+
+
+
+
+        .copyright{
+            margin-top: 4%;
+            justify-content: center;
+            align-items: end;
+        }
+
+        .row-footer{
+            display: flex;
+            flex-direction: column;
+        
+        }
+
+        .mapa iframe{
+            border-radius: 50px 50px 50px 50px;
+            border: 2px solid rgba(100,41,212,1);
+            -webkit-border-radius: 59px 59px 59px 59px;
+            -moz-border-radius: 59px 59px 59px 59px;
+            -webkit-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+            -moz-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+            box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+            width: 200px;
+            height: 100px;
+            margin-left:40px;
+        }
+
 }
