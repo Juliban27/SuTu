@@ -2070,3 +2070,457 @@ height: auto;
         
                 
         }
+
+        @media screen and (max-width: 540px) {
+            .contenedor-corsair .texto-corsair-1{
+                font-size: 70px;
+            }
+            
+            .contenedor-corsair .texto-corsair-2{
+                font-size: 40px;
+            }
+            .contenedor-corsair .texto-corsair-3{
+                font-size: 30px;
+            }
+            
+            .contenedor-razer{
+                height: 72vh;
+                width: 100%;
+            }
+            
+            .contenedor-razer .texto-razer-1{
+                font-size: 70px;
+            }
+            
+            .contenedor-razer .texto-razer-2{
+                font-size: 40px;
+            }
+            .contenedor-razer .texto-razer-3{
+                font-size: 30px;
+            }
+            
+            .contenedor-razer{
+                height: 72vh;
+                width: 100%;
+            }
+            .contenedor-logitech .texto-logitech-1{
+                font-size: 70px;
+            }
+            
+            .contenedor-logitech .texto-logitech-2{
+                font-size: 40px;
+            }
+            .contenedor-logitech .texto-logitech-3{
+                font-size: 30px;
+            }
+        
+        
+            .custom-btn {
+                width: 300px;
+                height: 30px;
+            }
+            
+            #destacados-grid .texto-desctacado-grid img{
+                width: 90px;
+                height: auto;
+                
+            }
+            
+            #destacados-grid .texto-desctacado-grid h3{
+                font-size: 25px;
+                color: rgb(255, 255, 255);
+                text-decoration: underline rgb(100, 41, 212);
+            }
+        
+        .destacados-grid-container img{
+            width: 350px;
+            height: auto;
+        }
+        
+        .destacados-grid-container p{
+            font-size: 21px;
+        }
+        
+        .custom-btn1 {
+        width: 350px;
+        height: 30px;
+        font-size: 17px;
+        }
+        
+        .destacados-grid-container{
+            margin: 20px;
+            grid-template-columns:99%;
+            grid-template-rows: repeat(auto,6);
+            grid-template-areas: 
+            "crua-fhd"
+            "sony-inzone" 
+            "msi-katana"
+            "ryzen7" 
+            "msi-mpg"
+            "samsung-sr35" 
+            ;
+            grid-row-gap: 20px; 
+        }
+        
+        /*?-----------------------------Catalogo----------------------------------*/
+        
+        .main-catalogo{
+            grid-template-columns:100%;
+            grid-template-rows: repeat(auto,12);
+            grid-template-areas: 
+            "nzxt"
+            "samsung"
+            "amd"
+            "msi"
+            "intel"
+            "nvidia"
+            "hyperx1"
+            "razer1" 
+            "asus"
+            "logitech1"
+            "corsair1"
+            "nzxtpsu"
+            ;
+        
+        
+        display: grid;
+        background-color: rgb(4, 4, 4);
+        }
+        
+        
+        
+        
+        .main-catalogo div img{
+        height: 250px;
+        width: 250px;
+        }
+        
+        .main-catalogo div{
+        
+        width: 250px;
+        
+        
+        }
+        
+        .descripcion-grid-catalogo h6{
+        font-size: 20px;
+        
+        }
+        
+        
+        .banner-contacto .titulo-contacto h2{
+            font-size: 60px;
+        }
+        
+        
+            /**-----------------------------FOOTER----------------------------------*/
+                .footer{
+                    height: auto;
+                    
+                }
+            
+            
+            
+                .footer-enlaces{
+                    width: 100%;
+                    height: auto;
+                    
+                }
+        
+            
+                .redes-socialesx{
+            
+                    flex-direction: row;
+                    justify-content: space-around;
+                    
+                    
+                }
+                
+                
+        
+        
+        
+                .copyright{
+                    margin-top: 4%;
+                    justify-content: center;
+                    align-items: end;
+                }
+        
+                .row-footer{
+                    display: flex;
+                    flex-direction: column;
+                
+                }
+        
+                .mapa iframe{
+                    border-radius: 50px 50px 50px 50px;
+                    border: 2px solid rgba(100,41,212,1);
+                    -webkit-border-radius: 59px 59px 59px 59px;
+                    -moz-border-radius: 59px 59px 59px 59px;
+                    -webkit-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+                    -moz-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+                    box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+                    width: 350px;
+                    height: 150px;
+                    margin-left:20px;
+                }
+        
+        }
+        @media screen and (max-width: 380px) {
+            /*?-----------------------------HEADER----------------------------------*/
+            
+            
+            .contenedor-logitech .texto-logitech-1{
+                font-size: 40px;
+            }
+            .contenedor-corsair .texto-corsair-1{
+                font-size: 40px;
+            }
+            
+            .contenedor-corsair .texto-corsair-2{
+                font-size: 20px;
+            }
+            .contenedor-corsair .texto-corsair-3{
+                font-size: 30px;
+            }
+            
+            .contenedor-razer{
+                height: 72vh;
+                width: 100%;
+            }
+            
+            .contenedor-razer .texto-razer-1{
+                font-size: 40px;
+            }
+            
+            .contenedor-razer .texto-razer-2{
+                font-size: 20px;
+            }
+            .contenedor-razer .texto-razer-3{
+                font-size: 30px;
+            }
+            
+            .contenedor-razer{
+                height: 72vh;
+                width: 100%;
+            }
+            
+            
+            .contenedor-logitech .texto-logitech-2{
+                font-size: 20px;
+            }
+            .contenedor-logitech .texto-logitech-3{
+                font-size: 30px;
+            }
+                #destacados-grid .texto-desctacado-grid img{
+                    width: 70px;
+                    height: auto;
+                    
+                }
+                
+                #destacados-grid .texto-desctacado-grid h3{
+                    font-size: 25px;
+                    color: rgb(255, 255, 255);
+                    text-decoration: underline rgb(100, 41, 212);
+                }
+            
+            .destacados-grid-container img{
+                width: 300px;
+                height: auto;
+            }
+            
+            .destacados-grid-container p{
+                font-size: 17px;
+            }
+            
+            .custom-btn1 {
+            width: 300px;
+            height: 30px;
+            font-size: 13px;
+            }
+            
+            .destacados-grid-container{
+                margin: 20px;
+                grid-template-columns:99%;
+                grid-template-rows: repeat(auto,6);
+                grid-template-areas: 
+                "crua-fhd"
+                "sony-inzone" 
+                "msi-katana"
+                "ryzen7" 
+                "msi-mpg"
+                "samsung-sr35" 
+                ;
+                grid-row-gap: 20px; 
+            }   
+                
+            
+            
+            
+            
+            /*?-----------------------------Catalogo----------------------------------*/
+            
+            .main-catalogo{
+                grid-template-columns:100%;
+                grid-template-rows: repeat(auto,12);
+                grid-template-areas: 
+                "nzxt"
+                "samsung"
+                "amd"
+                "msi"
+                "intel"
+                "nvidia"
+                "hyperx1"
+                "razer1" 
+                "asus"
+                "logitech1"
+                "corsair1"
+                "nzxtpsu"
+                ;
+            
+            
+            display: grid;
+            background-color: rgb(4, 4, 4);
+            }
+            
+            
+            
+            
+            .main-catalogo div img{
+            height: 200px;
+            width: 200px;
+            }
+            
+            .main-catalogo div{
+            
+            width: 200px;
+            
+            
+            }
+            
+            .descripcion-grid-catalogo h6{
+            font-size: 10px;
+            
+            }
+            
+            
+                /**-----------------------------FOOTER----------------------------------*/
+                    .footer{
+                        height: auto;
+                        
+                    }
+                
+                
+                
+                    .footer-enlaces{
+                        width: 100%;
+                        height: auto;
+                        
+                    }
+            
+                
+                    .redes-socialesx{
+                
+                        flex-direction: row;
+                        justify-content: space-around;
+                        
+                        
+                    }
+                    
+                    
+            
+            
+            
+            
+                    .copyright{
+                        margin-top: 4%;
+                        justify-content: center;
+                        align-items: end;
+                    }
+            
+                    .row-footer{
+                        display: flex;
+                        flex-direction: column;
+                    
+                    }
+            
+                    .mapa iframe{
+                        border-radius: 50px 50px 50px 50px;
+                        border: 2px solid rgba(100,41,212,1);
+                        -webkit-border-radius: 59px 59px 59px 59px;
+                        -moz-border-radius: 59px 59px 59px 59px;
+                        -webkit-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+                        -moz-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+                        box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+                        width: 250px;
+                        height: 150px;
+                        margin-left:40px;
+                    }
+            
+            }
+            
+
+@media screen and (max-width: 300px) {
+        /*?-----------------------------HEADER----------------------------------*/
+        
+        .banner-contacto .titulo-contacto h2{
+            font-size: 40px;
+        }
+        /**-----------------------------FOOTER----------------------------------*/
+            .footer{
+                height: auto;
+                
+            }
+        
+        
+        
+            .footer-enlaces{
+                width: 100%;
+                height: auto;
+                
+            }
+    
+        
+            .redes-socialesx{
+        
+                flex-direction: row;
+                justify-content: space-around;
+                
+                
+            }
+            
+            .redes-socialesx a img{
+                width: 30px;
+                height: 30px;
+    
+            }
+    
+    
+    
+    
+            .copyright{
+                margin-top: 4%;
+                justify-content: center;
+                align-items: end;
+            }
+    
+            .row-footer{
+                display: flex;
+                flex-direction: column;
+            
+            }
+    
+            .mapa iframe{
+                border-radius: 50px 50px 50px 50px;
+                border: 2px solid rgba(100,41,212,1);
+                -webkit-border-radius: 59px 59px 59px 59px;
+                -moz-border-radius: 59px 59px 59px 59px;
+                -webkit-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+                -moz-box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+                box-shadow: 0px 0px 91px -27px rgba(99, 42, 212, 1);
+                width: 200px;
+                height: 100px;
+                margin-left:40px;
+            }
+    
+    }
